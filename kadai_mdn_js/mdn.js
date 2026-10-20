@@ -1,8 +1,9 @@
 const date = new Date();
 const [month, day, year] = [
-  date.getMonth(),
+  date.getMonth() + 1,
   date.getDate(),
   date.getFullYear(),
 ];
 
-console.log(date);
+const formattedDate = year + '年' + month + '月' + day + '日';
+console.log(formattedDate);
